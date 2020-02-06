@@ -7,3 +7,11 @@
 a {
   display: block;
 }
+
+.column-title {
+  font-weight: bold;
+}
+
+.row-title {
+  margin-bottom: 8px;
+}
