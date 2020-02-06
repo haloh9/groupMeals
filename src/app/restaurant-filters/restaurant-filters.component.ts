@@ -12,4 +12,9 @@ export class RestaurantFiltersComponent implements OnInit {
   ngOnInit() {
   }
 
+  handleSort(e: Event) {
+    console.log('e', e);
+    document.getElementById('sortDropdown').textContent = (e.target as HTMLButtonElement).textContent;
+  }
+
 }
