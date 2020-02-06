@@ -6,8 +6,10 @@
   background: linear-gradient(90deg, rgba(187,187,187,1) 0%, rgba(244,244,244,1) 100%);
 }
 
-#signin-button-group {
-  
+a {
+  font-weight: bold;
+   margin-top: 3px;
+  font-size: larger;
 }
 
 button {
