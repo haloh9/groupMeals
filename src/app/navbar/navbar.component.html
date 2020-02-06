@@ -1,3 +1,7 @@
-<div id="navbarContainer">
-
+<div id="navbar-container">
+  <a [routerLink]="['/']">Group'Meals</a>
+  <div id="signin-button-group">
+    <button type="button" class="btn btn-primary" [routerLink]="['/register']">S'inscrire</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['/login']">Se connecter</button>
+  </div>
 </div>

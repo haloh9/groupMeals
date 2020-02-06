@@ -1,0 +1,15 @@
+#navbar-container {
+  padding: 8px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  background: linear-gradient(90deg, rgba(187,187,187,1) 0%, rgba(244,244,244,1) 100%);
+}
+
+#signin-button-group {
+  
+}
+
+button {
+  margin: 0 4px;
+}
