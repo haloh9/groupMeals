@@ -8,6 +8,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { RestaurantFiltersComponent } from './restaurant-filters/restaurant-filters.component';
+import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
+import { RestaurantCardComponent } from './restaurant-list/restaurant-card/restaurant-card.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +18,9 @@ import { HomeComponent } from './home/home.component';
     NavbarComponent,
     FooterComponent,
     HomeComponent,
+    RestaurantFiltersComponent,
+    RestaurantListComponent,
+    RestaurantCardComponent,
   ],
   imports: [
     BrowserModule,
