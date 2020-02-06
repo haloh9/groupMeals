@@ -1,20 +1,19 @@
 <div id="card-container">
   <div class="card">
-    <h5 class="card-header">Le Carthage
-      <span class="badge badge-pill badge-info">Partenaire</span>
-      <span class="badge badge-pill badge-warning">Populaire</span>
+    <h5 class="card-header">{{restaurant.name}}
+      <span *ngIf="restaurant.partner" class="badge badge-pill badge-info">Partenaire</span>
+      <span *ngIf="restaurant.sponsored" class="badge badge-pill badge-warning">Sponsorisé</span>
     </h5>
     <div class="card-body">
       <img src="../../../assets/images/placeholder_square_200.png" alt="" class="restaurant-image">
       <img src="../../../assets/images/placeholder_square_200.png" alt="" class="restaurant-image">
-      <p class="card-text">Description du restaurant avec une jolie présentation et une mise en avant remarquable de
-        l'établissement sans modération sinequanone.</p>
+      <p class="card-text">{{restaurant.description}}</p>
       <a href="#" class="btn btn-primary">Voir la carte</a>
     </div>
     <div class="card-footer">
-      <span>Temps de livraison : ~45min</span>
-      <span>Minimum de commande : 10,00€</span>
-      <span>Avis : 4,2/5</span>
+      <span>Temps de livraison : ~{{restaurant.delivery}}</span>
+      <span>Minimum de commande : {{restaurant.minAmount}}</span>
+      <span>Avis : {{restaurant.reviews}}/5</span>
     </div>
   </div>
 </div>
