@@ -9,11 +9,6 @@ import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: HomeComponent,
-    pathMatch: 'full'
-  },
-  {
     path: 'register',
     component: RegisterComponent,
     pathMatch: 'full'
@@ -27,6 +22,14 @@ const routes: Routes = [
     path: 'profile',
     component: UserComponent,
     pathMatch: 'full'
+  },
+  {
+    path: '',
+    component: HomeComponent,
+  },
+  {
+    path: '**',
+    redirectTo: ''
   },
 ];
 
