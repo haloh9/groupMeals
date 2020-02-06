@@ -1,0 +1,9 @@
+#footer-container {
+  background: linear-gradient(180deg, rgba(187,187,187,1) 0%, rgba(244,244,244,1) 100%);
+  height: 140px;
+  padding: 8px;
+}
+
+a {
+  display: block;
+}
