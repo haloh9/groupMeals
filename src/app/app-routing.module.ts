@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { UserComponent } from './user/user.component';
 
 
 const routes: Routes = [
@@ -10,21 +13,21 @@ const routes: Routes = [
     component: HomeComponent,
     pathMatch: 'full'
   },
-  /*
-  { path: 'crisis-center', component: CrisisListComponent },
-  { path: 'hero/:id', component: HeroDetailComponent },
   {
-    path: 'heroes',
-    component: HeroListComponent,
-    data: { title: 'Heroes List' }
-  },
-  {
-    path: '',
-    redirectTo: '/heroes',
+    path: 'register',
+    component: RegisterComponent,
     pathMatch: 'full'
   },
-  { path: '**', component: PageNotFoundComponent }
-  */
+  {
+    path: 'login',
+    component: LoginComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'profile',
+    component: UserComponent,
+    pathMatch: 'full'
+  },
 ];
 
 @NgModule({
