@@ -5,16 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RegisterComponent } from './register/register.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import { FormRegisterComponent } from './register/form-register/form-register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    RegisterComponent,
+    FormRegisterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
