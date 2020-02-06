@@ -8,6 +8,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RegisterComponent } from './register/register.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { FormRegisterComponent } from './register/form-register/form-register.component';
+import { LoginComponent } from './login/login.component';
+import { FormLoginComponent } from './login/form-login/form-login.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { FormRegisterComponent } from './register/form-register/form-register.co
     NavbarComponent,
     RegisterComponent,
     FormRegisterComponent,
+    LoginComponent,
+    FormLoginComponent,
   ],
   imports: [
     BrowserModule,
