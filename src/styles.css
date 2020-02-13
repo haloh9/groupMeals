@@ -1,9 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
-.btn-primary {
+.btn-primary{
   background-color: #e94e6d;
   color: white;
   border-color: #e94e6d;
+}
+.nav-pills .nav-link.active{
+  background-color: #e94e6d;
+  color: white;
+  border-color: #e94e6d;
+}
+a{
+  color:#23b2a4 ;
 }
 .btn-primary:hover {
   background-color: #c9435d;

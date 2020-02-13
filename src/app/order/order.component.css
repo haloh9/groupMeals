@@ -1,0 +1,38 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #333;
+	line-height: 1.6;
+}
+.mb-60 {
+	margin-bottom: 60px;
+}
+
+.single_menu_list {
+	position: relative;
+	padding-left: 35%;
+	margin-bottom: 50px;
+}
+
+.single_menu_list img {
+	max-width: 30%;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	border: 1px solid #ddd;
+	padding: 3px;
+}
+
+
+.single_menu_list h4 {
+	font-size: 20px;
+	border-bottom: 1px dashed #333;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+}
+
+.single_menu_list h4 span {
+	float: right;
+	font-weight: bold;
+	color: #23b2a4;
+	font-style: italic;
+}

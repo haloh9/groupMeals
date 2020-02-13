@@ -8,7 +8,8 @@
       <img src="../../../assets/images/placeholder_square_200.png" alt="" class="restaurant-image">
       <img src="../../../assets/images/placeholder_square_200.png" alt="" class="restaurant-image">
       <p class="card-text">{{restaurant.description}}</p>
-      <a href="#" class="btn btn-primary">Voir la carte</a>
+      <button type="button" class="btn btn-primary" [routerLink]="['/order', restaurant.id]">Voir la carte</button>
+
     </div>
     <div class="card-footer">
       <span>Temps de livraison : ~{{restaurant.delivery}}</span>
