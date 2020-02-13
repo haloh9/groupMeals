@@ -22,3 +22,19 @@ img {
 button {
   margin: 0 4px;
 }
+
+#user-info-group {
+  padding: 5px 0;
+}
+
+#user-info-group > span {
+  color: white;
+}
+
+#username {
+  font-weight: bold;
+}
+
+#logout-icon {
+  color: white;
+}

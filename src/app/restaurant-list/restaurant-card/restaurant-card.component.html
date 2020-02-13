@@ -8,8 +8,12 @@
       <img src="../../../assets/images/placeholder_square_200.png" alt="" class="restaurant-image">
       <img src="../../../assets/images/placeholder_square_200.png" alt="" class="restaurant-image">
       <p class="card-text">{{restaurant.description}}</p>
-      <button type="button" class="btn btn-primary" [routerLink]="['/order', restaurant.id]">Voir la carte</button>
 
+      <a href="#" class="btn btn-primary" [routerLink]="['/order', restaurant.id]">Voir la carte</a>
+      <ng-container *ngIf="isAdmin">
+        <a href="#" class="btn btn-sm btn-outline-secondary"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+        <a href="#" class="btn btn-sm btn-outline-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
+      </ng-container>
     </div>
     <div class="card-footer">
       <span>Temps de livraison : ~{{restaurant.delivery}}</span>

@@ -1,7 +1,17 @@
 <div id="navbar-container">
   <a [routerLink]="['/']"><img src="../../assets/images/logo_groupmeals.png" class="img-fluid" alt="Group'Meals"></a>
-  <div id="signin-button-group">
+  <div id="signin-button-group" *ngIf="!currentUser; else userInfo">
     <button type="button" class="btn btn-primary" [routerLink]="['/register']">S'inscrire</button>
     <button type="button" class="btn btn-secondary" [routerLink]="['/login']">Se connecter</button>
   </div>
 </div>
+
+<ng-template #userInfo>
+  <div id="user-info-group">
+    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+    <span>Bienvenue, </span>
+    <span id="username">{{currentUser?.username}}</span>
+    <span>. </span>
+    <i id="logout-icon" class="fa fa-power-off fa-2x" aria-hidden="true" (click)="logout()"></i>
+  </div>
+</ng-template>
