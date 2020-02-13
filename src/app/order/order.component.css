@@ -36,3 +36,12 @@ body {
 	color: #23b2a4;
 	font-style: italic;
 }
+
+.fa-trash {
+	cursor: pointer;
+	color: #e94e6d;
+}
+
+.card-footer > button {
+	margin-right: 16px;
+}
