@@ -9,10 +9,10 @@
 
 <ng-template #userInfo>
   <div id="user-info-group">
-    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+    <i id="user-icon" class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i>
     <span>Bienvenue, </span>
     <a id="username" [routerLink]="['/profil']">{{currentUser?.username}}</a>
     <span>. </span>
-    <i id="logout-icon" class="fa fa-power-off fa-2x" aria-hidden="true" (click)="logout()"></i>
+    <i id="logout-icon" class="fa fa-power-off fa-lg" aria-hidden="true" (click)="logout()"></i>
   </div>
 </ng-template>

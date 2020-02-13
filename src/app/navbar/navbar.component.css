@@ -36,5 +36,12 @@ button {
 }
 
 #logout-icon {
+  color: #e94e6d;
+  padding-left: 8px;
+  cursor: pointer;
+}
+
+#user-icon {
   color: white;
+  padding-right: 8px;
 }
