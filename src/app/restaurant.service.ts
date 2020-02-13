@@ -1,10 +1,21 @@
 import { Injectable } from '@angular/core';
 
+export interface Restaurant {
+  id: number;
+  name: string;
+  adress: string;
+  minAmount: string;
+  reviews: number;
+  partner: boolean;
+  sponsored: boolean;
+  delivery: string;
+  description: string;
+}
 @Injectable({
   providedIn: 'root'
 })
 export class RestaurantService {
-  restaurants: any[];
+  restaurants: Restaurant[];
 
   constructor() {
     this.restaurants = JSON.parse(`[{
@@ -110,15 +121,15 @@ export class RestaurantService {
     }]`);
   }
 
-  getAll(): any[] {
+  getAll(): Restaurant[] {
     return this.restaurants;
   }
 
-  getById(id: number): any {
+  getById(id: number): Restaurant {
     return this.restaurants.find(r => (r.id === id));
   }
 
-  removeById(id: number): any {
-    return this.restaurants.splice(this.restaurants.findIndex(r => (r.id === id)), 1);
+  removeById(id: number): Restaurant {
+    return this.restaurants.splice(this.restaurants.findIndex(r => (r.id === id)), 1)[0];
   }
 }
