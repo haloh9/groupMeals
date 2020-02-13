@@ -19,6 +19,7 @@ import { FormLoginComponent } from './login/form-login/form-login.component';
 import { UserComponent } from './user/user.component';
 import { FormAccountSettingComponent } from './user/form-account-setting/form-account-setting.component';
 import { OrderComponent } from './order/order.component';
+import { ConfirmComponent } from './order/confirm/confirm.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { OrderComponent } from './order/order.component';
     UserComponent,
     FormAccountSettingComponent,
     OrderComponent,
+    ConfirmComponent,
   ],
   imports: [
     BrowserModule,
