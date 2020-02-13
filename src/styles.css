@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+
+.btn-primary {
+  background-color: #e94e6d;
+  color: white;
+  border-color: #e94e6d;
+}
+.btn-primary:hover {
+  background-color: #c9435d;
+  color: white;
+  border-color: #e94e6d;
+}
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #b93751;
+  color: white;
+  border-color: #e94e6d;
+  box-shadow: 0 0 0 .2rem rgba(234, 78, 110, 0.5);
+}
+.btn-primary:focus {
+  background-color: #b93751;
+  color: white;
+  border-color: #e94e6d;
+  box-shadow: 0 0 0 .2rem rgba(234, 78, 110, 0.5) !important;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: #e94e6d;
+  border-color: #e94e6d;
+}
+.btn-outline-primary:hover {
+  background-color: rgba(0,0,0,.2);
+  color: #e94e6d;
+  border-color: #e94e6d;
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+  background-color: transparent;
+  color: #e94e6d;
+  border-color: #e94e6d;
+  box-shadow: 0 0 0 .2rem rgba(234, 78, 110, 0.5);
+}
+.btn-outline-primary:focus, .show > .btn-outline-primary.dropdown-toggle {
+  background-color: transparent;
+  color: #e94e6d;
+  border-color: #e94e6d;
+  box-shadow: 0 0 0 .2rem rgba(234, 78, 110, 0.5) !important;
+}
