@@ -19,5 +19,21 @@ export class UserService {
 
   constructor() { }
 
+  login(username: string, password: string) {
+    return this.user = {
+      username,
+      password,
+      role: UserRole.USER
+    };
+  }
+
+  logout() {
+    this.user = undefined;
+  }
+
+  current(): User {
+    return this.user;
+  }
+
 
 }
