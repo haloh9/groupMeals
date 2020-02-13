@@ -47,6 +47,9 @@
 }
 
 .container.parent { /* Ajouter "parent" aux boxs connexion et inscription */
-  min-height: 80vh;
-  margin: 0 100px;
+  min-height: 60vh;
+}
+
+.container.parent > .card { /* Ajouter "parent" aux boxs connexion et inscription */
+  margin: 5vh 20vw;
 }
