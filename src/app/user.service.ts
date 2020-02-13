@@ -35,5 +35,11 @@ export class UserService {
     return this.user;
   }
 
+  debugSetAdmin() {
+    this.user.role = UserRole.ADMIN;
+  }
 
+  debugSetUser() {
+    this.user.role = UserRole.USER;
+  }
 }

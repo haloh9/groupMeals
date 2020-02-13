@@ -16,3 +16,7 @@
 .badge {
   margin-right: 4px;
 }
+
+.card-body > a {
+  margin-right: 16px;
+}

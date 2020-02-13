@@ -34,3 +34,7 @@ button {
 #username {
   font-weight: bold;
 }
+
+#logout-icon {
+  color: white;
+}
