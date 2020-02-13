@@ -4,7 +4,7 @@
   flex-flow: row;
   justify-content: space-between;
   background: linear-gradient(155deg, #23b2a4 70%, #1cb3ce 100%);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.33);
+  box-shadow: 0 2px 1px rgba(0,0,0,0.33);
 }
 
 #logo-link {

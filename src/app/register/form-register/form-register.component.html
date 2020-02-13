@@ -1,92 +1,123 @@
 <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
   <div class="form-group row">
-    <label for="last-name" class="col-sm-2 col-form-label">Nom *</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="last-name" formControlName="lastName">
-    </div>
+    <div class="col-sm-10 mx-auto">    
+        <div class="input-group mb-1">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
+            </div>
+            <input type="text" class="form-control" id="last-name" formControlName="lastName" placeholder="Nom">
+          </div>
+      </div>
   </div>
 
   <div class="form-group row">
-    <label for="first-name" class="col-sm-2 col-form-label">Prénom *</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="first-name" formControlName="firstName">
-    </div>
+    <div class="col-sm-10 mx-auto">    
+        <div class="input-group mb-1">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
+            </div>
+            <input type="text" class="form-control" id="first-name" formControlName="firstName" placeholder="Prénom">
+          </div>
+      </div>
   </div>
 
   <div class="form-group row">
-    <label for="user-name" class="col-sm-2 col-form-label">Identifiant *</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="user-name" formControlName="username">
-    </div>
+    <div class="col-sm-10 mx-auto">    
+        <div class="input-group mb-1">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
+            </div>
+            <input type="text" class="form-control" id="user-name" formControlName="username" placeholder="Identifiant de connexion">
+          </div>
+      </div>
   </div>
 
   <div class="form-group row">
-    <label for="password" class="col-sm-2 col-form-label">Mot de passe *</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="password" formControlName="password">
-    </div>
+    <div class="col-sm-10 mx-auto">    
+        <div class="input-group mb-1">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-key" aria-hidden="true"></i></span>
+            </div>
+            <input type="password" class="form-control" id="password" formControlName="password" placeholder="Mot de passe">
+          </div>
+      </div>
   </div>
 
   <div class="form-group row">
-    <label for="email" class="col-sm-2 col-form-label">E-mail *</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="email" formControlName="email">
-    </div>
+    <div class="col-sm-10 mx-auto">    
+        <div class="input-group mb-1">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+            </div>
+            <input type="text" class="form-control" id="email" formControlName="email" placeholder="Addresse email">
+          </div>
+      </div>
   </div>
 
   <div class="form-group row">
-    <label for="phone" class="col-sm-2 col-form-label">Numéro de téléphone</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="phone" formControlName="phone">
-    </div>
+    <div class="col-sm-10 mx-auto">    
+        <div class="input-group mb-1">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-phone" aria-hidden="true"></i></span>
+            </div>
+            <input type="text" class="form-control" id="phone" formControlName="phone" placeholder="Numéro de téléphone">
+          </div>
+      </div>
   </div>
 
-  <fieldset class="form-group">
-    <div class="row">
-      <legend class="col-form-label col-sm-2 pt-0">Préférences de notification</legend>
-      <div class="col-sm-10">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="notificationPreferenceEmail"
-            formControlName="notificationPreferenceEmail" id="notification-preference-email" value="option1" checked>
+  <fieldset class="form-group row">
+    <div class="col-sm-10 mx-auto">
+        <legend class="col-form-label">Préférences de notification</legend>
+
+        <div class="form-check ml-5">
+          <input class="form-check-input" type="checkbox" name="notificationPreferenceEmail" formControlName="notificationPreferenceEmail" id="notification-preference-email" value="option1" checked>
           <label class="form-check-label" for="notification-preference-email">
             E-mail
           </label>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="notificationPreferenceSms"
-            formControlName="notificationPreferenceSms" id="notification-preference-sms" value="option2">
+        <div class="form-check ml-5">
+          <input class="form-check-input" type="checkbox" name="notificationPreferenceSms" formControlName="notificationPreferenceSms" id="notification-preference-sms" value="option2">
           <label class="form-check-label" for="notification-preference-sms">
             Texto
           </label>
         </div>
-        <div class="form-check disabled">
-          <input class="form-check-input" type="checkbox" name="notificationPreferencePush"
-            formControlName="notificationPreferencePush" id="notification-preference-push" value="option3">
+        <div class="form-check ml-5">
+          <input class="form-check-input" type="checkbox" name="notificationPreferencePush" formControlName="notificationPreferencePush" id="notification-preference-push" value="option3">
           <label class="form-check-label" for="notification-preference-push">
             Notification windows
           </label>
         </div>
-      </div>
     </div>
   </fieldset>
 
   <div class="form-group row">
-    <label for="secret_question" class="col-sm-2 col-form-label">Question secrète *</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="secret_question" formControlName="secretQuestion">
-    </div>
+    <div class="col-sm-10 mx-auto">    
+        <div class="input-group mb-1">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-question-circle-o" aria-hidden="true"></i></span>
+            </div>
+            <input type="text" class="form-control" id="secret_question" formControlName="secretQuestion" placeholder="Question secrète ?">
+          </div>
+      </div>
   </div>
 
   <div class="form-group row mb-20">
-    <label for="secret_answer" class="col-sm-2 col-form-label">Réponse secrète *</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="secret_answer" formControlName="secretAnswer">
-    </div>
+    <div class="col-sm-10 mx-auto">    
+        <div class="input-group mb-1">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-registered" aria-hidden="true"></i></span>
+            </div>
+            <input type="text" class="form-control" id="secret_answer" formControlName="secretAnswer" placeholder="Réponse secrète">
+          </div>
+      </div>
   </div>
 
   <div class="form-group row">
-    <div class="col-sm-12 text-right">
-      <button type="submit" class="btn btn-primary">S'inscrire</button>
+      <div class="col-sm-10 mx-auto text-center mb-1">
+        <button type="submit" class="btn btn-primary" >S'inscrire</button>
+      </div>
+      <div class="col-sm-10 mx-auto text-center">
+          <span> Vous avez déjà un compte ?<a [routerLink]="['/login']"> Connexion</a> </span>
+      </div>
     </div>
-  </div>
 </form>

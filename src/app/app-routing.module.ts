@@ -5,9 +5,14 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
+import { OrderComponent } from './order/order.component';
 
 
 const routes: Routes = [
+  {
+    path: 'order/:id',
+    component: OrderComponent,
+  },
   {
     path: 'register',
     component: RegisterComponent,
