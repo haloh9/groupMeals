@@ -45,3 +45,8 @@
   border-color: #e94e6d;
   box-shadow: 0 0 0 .2rem rgba(234, 78, 110, 0.5) !important;
 }
+
+.container.parent { /* Ajouter "parent" aux boxs connexion et inscription */
+  min-height: 80vh;
+  margin: 0 100px;
+}
