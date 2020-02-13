@@ -110,15 +110,15 @@ export class RestaurantService {
     }]`);
   }
 
-  getAll() {
+  getAll(): any[] {
     return this.restaurants;
   }
 
-  getById(id: number) {
+  getById(id: number): any {
     return this.restaurants.find(r => (r.id === id));
   }
 
-  removeById(id: number) {
+  removeById(id: number): any {
     return this.restaurants.splice(this.restaurants.findIndex(r => (r.id === id)), 1);
   }
 }
