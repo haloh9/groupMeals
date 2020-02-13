@@ -1,7 +1,13 @@
 # GroupMeals
 [Github link](https://github.com/haloh9/groupMeals)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.25.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.25.accor
+
+## Prerequisites
+
+Install Node.js according to your OS by following the steps of [the official documentation](https://nodejs.org/en/download/).
+Run `npm install -g @angular/cli` (this might need elevated privileges).
+Install all the dependencies with `npm install` after making sure you are at the root of the project folder.
 
 ## Development server
 
