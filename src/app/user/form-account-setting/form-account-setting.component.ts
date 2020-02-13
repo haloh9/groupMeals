@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {AbstractControl, FormControl, FormGroup} from '@angular/forms';
+import { AbstractControl, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-form-account-setting',
@@ -15,16 +15,16 @@ export class FormAccountSettingComponent implements OnInit {
 
   ngOnInit() {
     this.settingAccountForm = new FormGroup({
-      firstName: new FormControl({value: 'Dimitri', disabled: true}),
-      lastName: new FormControl({value: 'Payet', disabled: true}),
-      userName: new FormControl({value: 'dimitri.payet', disabled: true}),
+      firstName: new FormControl({ value: 'Dimitri', disabled: true }),
+      lastName: new FormControl({ value: 'Payet', disabled: true }),
+      username: new FormControl({ value: 'dimitri.payet', disabled: true }),
       password: new FormControl('rezrezrez'),
-      email: new FormControl({value: 'dimitri.payet@ynov.com', disabled: true}),
+      email: new FormControl({ value: 'dimitri.payet@ynov.com', disabled: true }),
       phone: new FormControl(''),
       notificationPreferenceEmail: new FormControl(false),
       notificationPreferenceSms: new FormControl(true),
       notificationPreferencePush: new FormControl(false),
-      secretQuestion: new FormControl({value: 'Mon meilleur but de l\'année ?? ', disabled: true}),
+      secretQuestion: new FormControl({ value: 'Mon meilleur but de l\'année ?? ', disabled: true }),
       secretAnswer: new FormControl('hehehehehe'),
     });
   }
