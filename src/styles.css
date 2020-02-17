@@ -11,7 +11,10 @@
   border-color: #e94e6d;
 }
 a{
-  color:#23b2a4 ;
+  color:#23b2a4;
+}
+a:hover {
+  color: #036c5d;;
 }
 .btn-primary:hover {
   background-color: #c9435d;
@@ -59,5 +62,5 @@ a{
 }
 
 .container.parent > .card { /* Ajouter "parent" aux boxs connexion et inscription */
-  margin: 5vh 20vw;
+  margin: 5vh 10vw;
 }
